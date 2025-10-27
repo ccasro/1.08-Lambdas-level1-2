@@ -1,4 +1,4 @@
-package org.ccasro.exercise1;
+package org.ccasro.level1.exercise1;
 
 import java.util.List;
 
