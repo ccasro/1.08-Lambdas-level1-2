@@ -11,7 +11,13 @@ public class MainEx3 {
         Operation add = () -> a + b;
         Operation sub = () -> a - b;
         Operation mul = () -> a * b;
-        Operation div = () -> a / b;
+        Operation div = () -> {
+            if (b == 0f) {
+            System.out.println("Error: div by 0");
+            return Float.NaN;
+        }
+        return a / b;
+        };
 
         System.out.println("+:  " + add.operation());
         System.out.println("-: " + sub.operation());
